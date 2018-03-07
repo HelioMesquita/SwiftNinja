@@ -6,8 +6,6 @@ target 'swiftninja' do
   use_frameworks!
 
   pod 'Alamofire'
-#  pod 'Swinject'
-#  pod 'SwinjectStoryboard'
 
   # Pods for swiftninja
 
