@@ -1,0 +1,6 @@
+framework module Pods_swiftninjaTests {
+  umbrella header "Pods-swiftninjaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
