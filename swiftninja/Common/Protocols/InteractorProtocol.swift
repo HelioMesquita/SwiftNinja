@@ -17,8 +17,9 @@ extension InteractorProtocol {
         } catch {
           completion(Result.failure(.jsonParsingFailure))
         }
+      } else {
+        completion(Result.failure(.jsonConversionFailure))
       }
-      completion(Result.failure(.jsonConversionFailure))
     }, onFail: { error in
       completion(Result.failure(.responseUnsuccessful))
     })
