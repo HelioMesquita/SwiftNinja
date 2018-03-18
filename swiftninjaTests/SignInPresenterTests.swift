@@ -26,10 +26,10 @@ class SignInPresenterTests: QuickSpec {
       func showError(error: APIError) {}
     }
 
-    describe("NetworkRequest") {
+    describe("sign in presenter") {
 
       context("get") {
-        it("should a signInModel from json") {
+        it("should return a signInModel from json") {
           let interactor = SingleRequestInteractor(endPoint: SignInEndPoint())
           let presenter = SignInPresenter(presenter: dummySignInPresenter(), interactor: interactor)
 

@@ -17,7 +17,7 @@
 		FD5BEEAD204DDED700280E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5BEEAB204DDED700280E4D /* Main.storyboard */; };
 		FD5BEEAF204DDED700280E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5BEEAE204DDED700280E4D /* Assets.xcassets */; };
 		FD5BEEB2204DDED700280E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5BEEB0204DDED700280E4D /* LaunchScreen.storyboard */; };
-		FD5BEEBD204DDED700280E4D /* SignInInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEBC204DDED700280E4D /* SignInInteractorTests.swift */; };
+		FD5BEEBD204DDED700280E4D /* InteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEBC204DDED700280E4D /* InteractorTests.swift */; };
 		FD5BEEC8204DDED700280E4D /* swiftninjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEC7204DDED700280E4D /* swiftninjaUITests.swift */; };
 		FD5BEED7204DE05100280E4D /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEED6204DE05100280E4D /* Bundle.swift */; };
 		FD5BEEDE204DE17500280E4D /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEDD204DE17500280E4D /* EndPointProtocol.swift */; };
@@ -70,7 +70,7 @@
 		FD5BEEB1204DDED700280E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD5BEEB3204DDED700280E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5BEEB8204DDED700280E4D /* swiftninjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftninjaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD5BEEBC204DDED700280E4D /* SignInInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractorTests.swift; sourceTree = "<group>"; };
+		FD5BEEBC204DDED700280E4D /* InteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorTests.swift; sourceTree = "<group>"; };
 		FD5BEEBE204DDED700280E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5BEEC3204DDED700280E4D /* swiftninjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftninjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5BEEC7204DDED700280E4D /* swiftninjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftninjaUITests.swift; sourceTree = "<group>"; };
@@ -164,7 +164,6 @@
 				FD14BAC420508DEA001DD09D /* PresenterProtocol.swift */,
 				FD5BEEDD204DE17500280E4D /* EndPointProtocol.swift */,
 				FD45F2A3204E0FDE00783869 /* InteractorProtocol.swift */,
-				FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 		FD14BAC220508640001DD09D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */,
 				FD5BEEF0204DEC1800280E4D /* UserInfo.swift */,
 				FD968235204F2FFB00BAF529 /* APIError.swift */,
 				FD968237204F311800BAF529 /* Result.swift */,
@@ -226,8 +226,8 @@
 		FD5BEEBB204DDED700280E4D /* swiftninjaTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD5BEEBC204DDED700280E4D /* SignInInteractorTests.swift */,
 				FD5BEEBE204DDED700280E4D /* Info.plist */,
+				FD5BEEBC204DDED700280E4D /* InteractorTests.swift */,
 				FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */,
 			);
 			path = swiftninjaTests;
@@ -604,7 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC5A16B205EB01100463B8C /* SignInPresenterTests.swift in Sources */,
-				FD5BEEBD204DDED700280E4D /* SignInInteractorTests.swift in Sources */,
+				FD5BEEBD204DDED700280E4D /* InteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
