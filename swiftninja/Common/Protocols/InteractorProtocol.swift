@@ -44,6 +44,7 @@ extension InteractorProtocol {
 //      }
 
       if response.result.isSuccess {
+        print(response.result.value)
         onSuccess(response.data)
       } else {
         onFail(APIError.requestFailed)

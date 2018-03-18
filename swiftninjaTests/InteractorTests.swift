@@ -9,9 +9,9 @@ class InteractorTests: QuickSpec {
   override func spec() {
 
     let object =
-      [
-        "title": "title from mock json",
-        "message": "message from mock json"
+    [
+      "title": "title from mock json",
+      "message": "message from mock json"
     ]
 
     struct DummyInteractor: InteractorProtocol {
@@ -40,13 +40,30 @@ class InteractorTests: QuickSpec {
         it("should make a request and return some data") {
 
           self.stub(everything, json(object))
-
           var modelResponse: ModelDecodable? = nil
 
           networkService.request(onSuccess: { data in
             modelResponse = try! JSONDecoder().decode(ModelDecodable.self, from: data!)
-          }, onFail: { error in
+          }, onFail: { _ in })
 
+          expect(modelResponse?.title).toEventually(equal("title from mock json"))
+          expect(modelResponse?.message).toEventually(equal("message from mock json"))
+        }
+      }
+
+      context(".fetch") {
+        it("should make a request and return a model") {
+
+          self.stub(everything, json(object))
+          var modelResponse: ModelDecodable? = nil
+
+          networkService.fetch(decodingType: ModelDecodable.self, completion: { result in
+            switch result {
+            case .success(let model):
+              modelResponse = model
+            case .failure( _):
+              fail()
+            }
           })
 
           expect(modelResponse?.title).toEventually(equal("title from mock json"))
