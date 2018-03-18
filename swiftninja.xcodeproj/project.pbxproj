@@ -33,6 +33,7 @@
 		FD9D83A7205EDFE000096371 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83A5205EDFE000096371 /* ServiceCell.swift */; };
 		FD9D83A8205EDFE000096371 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD9D83A6205EDFE000096371 /* ServiceCell.xib */; };
 		FD9D83AA205EE1F700096371 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83A9205EE1F700096371 /* UITableViewCell.swift */; };
+		FD9D83AD205F0ED900096371 /* APIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83AC205F0ED900096371 /* APIDateFormatter.swift */; };
 		FDB845D9205ED9880015436F /* OfferList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845D8205ED9880015436F /* OfferList.swift */; };
 		FDB845DB205EDA510015436F /* OffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DA205EDA510015436F /* OffersPresenter.swift */; };
 		FDB845DD205EDB470015436F /* SingleEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DC205EDB470015436F /* SingleEndPoint.swift */; };
@@ -95,6 +96,7 @@
 		FD9D83A5205EDFE000096371 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		FD9D83A6205EDFE000096371 /* ServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
 		FD9D83A9205EE1F700096371 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		FD9D83AC205F0ED900096371 /* APIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatter.swift; sourceTree = "<group>"; };
 		FDB845D8205ED9880015436F /* OfferList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferList.swift; sourceTree = "<group>"; };
 		FDB845DA205EDA510015436F /* OffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPresenter.swift; sourceTree = "<group>"; };
 		FDB845DC205EDB470015436F /* SingleEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleEndPoint.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 		FD5BEED8204DE10100280E4D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FD9D83AB205F0E1700096371 /* Helpers */,
 				FD9D83A4205EDF3200096371 /* Views */,
 				FD14BAC220508640001DD09D /* Models */,
 				FD14BAC12050863A001DD09D /* Protocols */,
@@ -303,6 +306,14 @@
 				FD9D83A6205EDFE000096371 /* ServiceCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FD9D83AB205F0E1700096371 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD9D83AC205F0ED900096371 /* APIDateFormatter.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FDB845D7205ED6BD0015436F /* Models */ = {
@@ -631,6 +642,7 @@
 				FDB845D9205ED9880015436F /* OfferList.swift in Sources */,
 				FD5BEED7204DE05100280E4D /* Bundle.swift in Sources */,
 				FD968236204F2FFB00BAF529 /* APIError.swift in Sources */,
+				FD9D83AD205F0ED900096371 /* APIDateFormatter.swift in Sources */,
 				FD5BEEE7204DE97B00280E4D /* SignInModel.swift in Sources */,
 				FD5BEEE9204DE98600280E4D /* SignInLinks.swift in Sources */,
 				FD5BEEEE204DEB2D00280E4D /* SignInEndPoint.swift in Sources */,

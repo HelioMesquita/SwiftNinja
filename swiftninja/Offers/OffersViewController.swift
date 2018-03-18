@@ -30,9 +30,12 @@ class OffersViewController: UITableViewController, OffersPresenterProtocol {
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: ServiceCell.identifier, for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: ServiceCell.identifier, for: indexPath) as! ServiceCell
+    let offer = offerList?.offerAt(index: indexPath.row)
+    cell.titleLabel.text = offer?.title
+    cell.nameLabel.text = offer?.name
+    cell.dateLabel.text = offer?.date
+    cell.placeLabel.text = offer?.address
     return cell
  }
-
 }
-
