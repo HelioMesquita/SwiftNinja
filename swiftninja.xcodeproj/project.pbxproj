@@ -35,6 +35,7 @@
 		FD9D83B2205F1C8000096371 /* APIDateFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */; };
 		FD9D83B4205F1D3D00096371 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B3205F1D3D00096371 /* Link.swift */; };
 		FD9D83B6205F205E00096371 /* OfferState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B5205F205E00096371 /* OfferState.swift */; };
+		FD9D83B8205F214A00096371 /* OffersPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B7205F214A00096371 /* OffersPresenterTest.swift */; };
 		FDB845D9205ED9880015436F /* OfferList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845D8205ED9880015436F /* OfferList.swift */; };
 		FDB845DB205EDA510015436F /* OffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DA205EDA510015436F /* OffersPresenter.swift */; };
 		FDB845DD205EDB470015436F /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DC205EDB470015436F /* EndPoint.swift */; };
@@ -99,6 +100,7 @@
 		FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatterTest.swift; sourceTree = "<group>"; };
 		FD9D83B3205F1D3D00096371 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		FD9D83B5205F205E00096371 /* OfferState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferState.swift; sourceTree = "<group>"; };
+		FD9D83B7205F214A00096371 /* OffersPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPresenterTest.swift; sourceTree = "<group>"; };
 		FDB845D8205ED9880015436F /* OfferList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferList.swift; sourceTree = "<group>"; };
 		FDB845DA205EDA510015436F /* OffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPresenter.swift; sourceTree = "<group>"; };
 		FDB845DC205EDB470015436F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				FD5BEEBC204DDED700280E4D /* InteractorTests.swift */,
 				FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */,
 				FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */,
+				FD9D83B7205F214A00096371 /* OffersPresenterTest.swift */,
 			);
 			path = swiftninjaTests;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC5A16B205EB01100463B8C /* SignInPresenterTests.swift in Sources */,
+				FD9D83B8205F214A00096371 /* OffersPresenterTest.swift in Sources */,
 				FD5BEEBD204DDED700280E4D /* InteractorTests.swift in Sources */,
 				FD9D83B2205F1C8000096371 /* APIDateFormatterTest.swift in Sources */,
 			);
