@@ -22,21 +22,22 @@
 		FD5BEED7204DE05100280E4D /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEED6204DE05100280E4D /* Bundle.swift */; };
 		FD5BEEDE204DE17500280E4D /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEDD204DE17500280E4D /* EndPointProtocol.swift */; };
 		FD5BEEE7204DE97B00280E4D /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEE6204DE97B00280E4D /* SignInModel.swift */; };
-		FD5BEEE9204DE98600280E4D /* SignInLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEE8204DE98600280E4D /* SignInLinks.swift */; };
-		FD5BEEEB204DEA2800280E4D /* SignInLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEEA204DEA2800280E4D /* SignInLink.swift */; };
-		FD5BEEEE204DEB2D00280E4D /* SignInEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEED204DEB2D00280E4D /* SignInEndPoint.swift */; };
 		FD5BEEF1204DEC1800280E4D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEF0204DEC1800280E4D /* UserInfo.swift */; };
 		FD5BEEF4204DF17300280E4D /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEF3204DF17300280E4D /* SignInPresenter.swift */; };
-		FD8720BC205EA95A0046934A /* SingleRequestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */; };
+		FD8720BC205EA95A0046934A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8720BB205EA95A0046934A /* Interactor.swift */; };
 		FD968236204F2FFB00BAF529 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD968235204F2FFB00BAF529 /* APIError.swift */; };
 		FD968238204F311800BAF529 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD968237204F311800BAF529 /* Result.swift */; };
 		FD9D83A7205EDFE000096371 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83A5205EDFE000096371 /* ServiceCell.swift */; };
 		FD9D83A8205EDFE000096371 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD9D83A6205EDFE000096371 /* ServiceCell.xib */; };
 		FD9D83AA205EE1F700096371 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83A9205EE1F700096371 /* UITableViewCell.swift */; };
 		FD9D83AD205F0ED900096371 /* APIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83AC205F0ED900096371 /* APIDateFormatter.swift */; };
+		FD9D83B0205F11DE00096371 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83AF205F11DE00096371 /* NavigationController.swift */; };
+		FD9D83B2205F1C8000096371 /* APIDateFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */; };
+		FD9D83B4205F1D3D00096371 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B3205F1D3D00096371 /* Link.swift */; };
+		FD9D83B6205F205E00096371 /* OfferState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B5205F205E00096371 /* OfferState.swift */; };
 		FDB845D9205ED9880015436F /* OfferList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845D8205ED9880015436F /* OfferList.swift */; };
 		FDB845DB205EDA510015436F /* OffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DA205EDA510015436F /* OffersPresenter.swift */; };
-		FDB845DD205EDB470015436F /* SingleEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DC205EDB470015436F /* SingleEndPoint.swift */; };
+		FDB845DD205EDB470015436F /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DC205EDB470015436F /* EndPoint.swift */; };
 		FDC5A16B205EB01100463B8C /* SignInPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,21 +86,22 @@
 		FD5BEED6204DE05100280E4D /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		FD5BEEDD204DE17500280E4D /* EndPointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointProtocol.swift; sourceTree = "<group>"; };
 		FD5BEEE6204DE97B00280E4D /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
-		FD5BEEE8204DE98600280E4D /* SignInLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLinks.swift; sourceTree = "<group>"; };
-		FD5BEEEA204DEA2800280E4D /* SignInLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLink.swift; sourceTree = "<group>"; };
-		FD5BEEED204DEB2D00280E4D /* SignInEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEndPoint.swift; sourceTree = "<group>"; };
 		FD5BEEF0204DEC1800280E4D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FD5BEEF3204DF17300280E4D /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
-		FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRequestInteractor.swift; sourceTree = "<group>"; };
+		FD8720BB205EA95A0046934A /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		FD968235204F2FFB00BAF529 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		FD968237204F311800BAF529 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		FD9D83A5205EDFE000096371 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		FD9D83A6205EDFE000096371 /* ServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
 		FD9D83A9205EE1F700096371 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		FD9D83AC205F0ED900096371 /* APIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatter.swift; sourceTree = "<group>"; };
+		FD9D83AF205F11DE00096371 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatterTest.swift; sourceTree = "<group>"; };
+		FD9D83B3205F1D3D00096371 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		FD9D83B5205F205E00096371 /* OfferState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferState.swift; sourceTree = "<group>"; };
 		FDB845D8205ED9880015436F /* OfferList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferList.swift; sourceTree = "<group>"; };
 		FDB845DA205EDA510015436F /* OffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPresenter.swift; sourceTree = "<group>"; };
-		FDB845DC205EDB470015436F /* SingleEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleEndPoint.swift; sourceTree = "<group>"; };
+		FDB845DC205EDB470015436F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,11 +187,12 @@
 		FD14BAC220508640001DD09D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */,
+				FD8720BB205EA95A0046934A /* Interactor.swift */,
 				FD5BEEF0204DEC1800280E4D /* UserInfo.swift */,
 				FD968235204F2FFB00BAF529 /* APIError.swift */,
 				FD968237204F311800BAF529 /* Result.swift */,
-				FDB845DC205EDB470015436F /* SingleEndPoint.swift */,
+				FDB845DC205EDB470015436F /* EndPoint.swift */,
+				FD9D83B3205F1D3D00096371 /* Link.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				FD5BEEBE204DDED700280E4D /* Info.plist */,
 				FD5BEEBC204DDED700280E4D /* InteractorTests.swift */,
 				FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */,
+				FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */,
 			);
 			path = swiftninjaTests;
 			sourceTree = "<group>";
@@ -291,10 +295,7 @@
 		FD5BEEE4204DE7E600280E4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FD5BEEED204DEB2D00280E4D /* SignInEndPoint.swift */,
 				FD5BEEE6204DE97B00280E4D /* SignInModel.swift */,
-				FD5BEEE8204DE98600280E4D /* SignInLinks.swift */,
-				FD5BEEEA204DEA2800280E4D /* SignInLink.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,8 +303,8 @@
 		FD9D83A4205EDF3200096371 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FD9D83A5205EDFE000096371 /* ServiceCell.swift */,
-				FD9D83A6205EDFE000096371 /* ServiceCell.xib */,
+				FD9D83AE205F11B400096371 /* ServiceCell */,
+				FD9D83AF205F11DE00096371 /* NavigationController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,10 +317,20 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		FD9D83AE205F11B400096371 /* ServiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				FD9D83A5205EDFE000096371 /* ServiceCell.swift */,
+				FD9D83A6205EDFE000096371 /* ServiceCell.xib */,
+			);
+			path = ServiceCell;
+			sourceTree = "<group>";
+		};
 		FDB845D7205ED6BD0015436F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				FDB845D8205ED9880015436F /* OfferList.swift */,
+				FD9D83B5205F205E00096371 /* OfferState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -628,26 +639,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD5BEEAA204DDED700280E4D /* OffersViewController.swift in Sources */,
-				FD8720BC205EA95A0046934A /* SingleRequestInteractor.swift in Sources */,
-				FD5BEEEB204DEA2800280E4D /* SignInLink.swift in Sources */,
+				FD8720BC205EA95A0046934A /* Interactor.swift in Sources */,
 				FD5BEEF1204DEC1800280E4D /* UserInfo.swift in Sources */,
-				FDB845DD205EDB470015436F /* SingleEndPoint.swift in Sources */,
+				FDB845DD205EDB470015436F /* EndPoint.swift in Sources */,
 				FD9D83AA205EE1F700096371 /* UITableViewCell.swift in Sources */,
 				FD9D83A7205EDFE000096371 /* ServiceCell.swift in Sources */,
 				FD5BEEF4204DF17300280E4D /* SignInPresenter.swift in Sources */,
 				FD968238204F311800BAF529 /* Result.swift in Sources */,
 				FD5BEEDE204DE17500280E4D /* EndPointProtocol.swift in Sources */,
 				FDB845DB205EDA510015436F /* OffersPresenter.swift in Sources */,
+				FD9D83B0205F11DE00096371 /* NavigationController.swift in Sources */,
 				FD14BAC520508DEA001DD09D /* PresenterProtocol.swift in Sources */,
 				FDB845D9205ED9880015436F /* OfferList.swift in Sources */,
 				FD5BEED7204DE05100280E4D /* Bundle.swift in Sources */,
 				FD968236204F2FFB00BAF529 /* APIError.swift in Sources */,
 				FD9D83AD205F0ED900096371 /* APIDateFormatter.swift in Sources */,
 				FD5BEEE7204DE97B00280E4D /* SignInModel.swift in Sources */,
-				FD5BEEE9204DE98600280E4D /* SignInLinks.swift in Sources */,
-				FD5BEEEE204DEB2D00280E4D /* SignInEndPoint.swift in Sources */,
+				FD9D83B6205F205E00096371 /* OfferState.swift in Sources */,
 				FD45F2A4204E0FDE00783869 /* InteractorProtocol.swift in Sources */,
 				FD5BEEA8204DDED700280E4D /* AppDelegate.swift in Sources */,
+				FD9D83B4205F1D3D00096371 /* Link.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +668,7 @@
 			files = (
 				FDC5A16B205EB01100463B8C /* SignInPresenterTests.swift in Sources */,
 				FD5BEEBD204DDED700280E4D /* InteractorTests.swift in Sources */,
+				FD9D83B2205F1C8000096371 /* APIDateFormatterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

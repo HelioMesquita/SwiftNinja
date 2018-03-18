@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ecQ-gH-SeH" secondAttribute="trailing" constant="10" id="0g5-wh-59K"/>
                             <constraint firstItem="SnK-x9-SX4" firstAttribute="top" secondItem="ecQ-gH-SeH" secondAttribute="bottom" constant="16" id="2ch-6s-hhj"/>
@@ -62,7 +62,6 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="a2h-fP-B52" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="3gu-WB-cpN"/>
                     <constraint firstAttribute="trailing" secondItem="a2h-fP-B52" secondAttribute="trailing" constant="16" id="SUW-2q-ew8"/>
@@ -70,6 +69,7 @@
                     <constraint firstItem="a2h-fP-B52" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="skU-7r-PGx"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="dateLabel" destination="Uz9-2q-30b" id="T6N-7a-ekY"/>

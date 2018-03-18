@@ -5,7 +5,7 @@ class UserInfo {
 
   private static let instance = UserInfo()
 
-  static func initialize(offers: SignInLink, leads: SignInLink) {
+  static func initialize(offers: Link, leads: Link) {
     instance.offers = offers.href
     instance.leads = leads.href
   }

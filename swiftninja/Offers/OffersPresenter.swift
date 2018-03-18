@@ -19,6 +19,4 @@ struct OffersPresenter: PresenterProtocol {
   func onFail(error: APIError) {
     presenter.showError(error: error)
   }
-
 }
-

@@ -30,14 +30,15 @@ class SignInPresenterTests: QuickSpec {
 
       context("get") {
         it("should return a signInModel from json") {
-          let interactor = SingleRequestInteractor(endPoint: SignInEndPoint())
+          let endPoint = EndPoint(baseURL: "www.google.com", requestMethod: RequestMethod(name: .get))
+          let interactor = Interactor(endPoint: endPoint)
           let presenter = SignInPresenter(presenter: dummySignInPresenter(), interactor: interactor)
 
           self.stub(everything, json(object))
 
           presenter.present()
 
-          expect(UserInfo.leadsLink().href).to(equal("http://testemobile.getninjas.com.br/leads"))
+          expect(UserInfo.leadsLink()).to(equal("http://testemobile.getninjas.com.br/leads"))
         }
       }
     }

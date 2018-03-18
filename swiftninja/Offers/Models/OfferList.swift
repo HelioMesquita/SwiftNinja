@@ -20,10 +20,6 @@ struct OfferList: Decodable {
     case links = "_links"
   }
 
-  enum OfferState: String, Decodable {
-    case read, unread
-  }
-
   struct Offers: Decodable {
     let state: OfferState
     let embedded: EmbeddedFirst
@@ -75,9 +71,4 @@ struct OfferList: Decodable {
       case selfy = "self"
     }
   }
-
-  struct Link: Decodable {
-    let href: String
-  }
 }
-

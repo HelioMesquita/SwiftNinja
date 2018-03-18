@@ -1,5 +1,5 @@
 import Foundation
 
-struct SingleRequestInteractor: InteractorProtocol {
+struct Interactor: InteractorProtocol {
   var endPoint: EndPointProtocol
 }

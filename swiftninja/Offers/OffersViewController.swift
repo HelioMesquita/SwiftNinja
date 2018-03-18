@@ -10,10 +10,11 @@ class OffersViewController: UITableViewController, OffersPresenterProtocol {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let endPoint = SingleEndPoint(baseURL: UserInfo.offersLink(), requestMethod: RequestMethod(name: .get))
-    let interactor = SingleRequestInteractor(endPoint: endPoint)
+    let endPoint = EndPoint(baseURL: UserInfo.offersLink(), requestMethod: RequestMethod(name: .get))
+    let interactor = Interactor(endPoint: endPoint)
     OffersPresenter(interactor: interactor, presenter: self).present()
     tableView.register(ServiceCell.nib, forCellReuseIdentifier: ServiceCell.identifier)
+    title = "Ofertas"
   }
 
   func showError(error: APIError) {
@@ -32,10 +33,7 @@ class OffersViewController: UITableViewController, OffersPresenterProtocol {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: ServiceCell.identifier, for: indexPath) as! ServiceCell
     let offer = offerList?.offerAt(index: indexPath.row)
-    cell.titleLabel.text = offer?.title
-    cell.nameLabel.text = offer?.name
-    cell.dateLabel.text = offer?.date
-    cell.placeLabel.text = offer?.address
+    cell.setCell(title: offer?.title, state: offer?.state, name: offer?.name, date: offer?.date, address: offer?.address)
     return cell
  }
 }

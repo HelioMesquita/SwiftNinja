@@ -1,5 +1,5 @@
 import Foundation
 
-struct SignInLink: Codable {
+struct Link: Decodable {
   let href: String
 }

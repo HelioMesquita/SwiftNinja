@@ -1,6 +1,6 @@
 import Foundation
 
-struct SingleEndPoint: EndPointProtocol {
+struct EndPoint: EndPointProtocol {
   var baseURL: String
   var requestMethod: RequestMethod
 }
