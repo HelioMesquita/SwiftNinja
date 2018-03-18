@@ -30,7 +30,7 @@
 		FD8720BC205EA95A0046934A /* SingleRequestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */; };
 		FD968236204F2FFB00BAF529 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD968235204F2FFB00BAF529 /* APIError.swift */; };
 		FD968238204F311800BAF529 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD968237204F311800BAF529 /* Result.swift */; };
-		FDC5A16B205EB01100463B8C /* InteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5A16A205EB01100463B8C /* InteractorTest.swift */; };
+		FDC5A16B205EB01100463B8C /* SignInPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,7 @@
 		FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRequestInteractor.swift; sourceTree = "<group>"; };
 		FD968235204F2FFB00BAF529 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		FD968237204F311800BAF529 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		FDC5A16A205EB01100463B8C /* InteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorTest.swift; sourceTree = "<group>"; };
+		FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +228,7 @@
 			children = (
 				FD5BEEBC204DDED700280E4D /* SignInInteractorTests.swift */,
 				FD5BEEBE204DDED700280E4D /* Info.plist */,
-				FDC5A16A205EB01100463B8C /* InteractorTest.swift */,
+				FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */,
 			);
 			path = swiftninjaTests;
 			sourceTree = "<group>";
@@ -603,7 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC5A16B205EB01100463B8C /* InteractorTest.swift in Sources */,
+				FDC5A16B205EB01100463B8C /* SignInPresenterTests.swift in Sources */,
 				FD5BEEBD204DDED700280E4D /* SignInInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

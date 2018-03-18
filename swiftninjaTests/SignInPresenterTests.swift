@@ -4,7 +4,7 @@ import Mockingjay
 
 @testable import swiftninja
 
-class NetworkRequestTests: QuickSpec {
+class SignInPresenterTests: QuickSpec {
 
   override func spec() {
 
