@@ -1,20 +1,20 @@
 class UserInfo {
 
-  private var offers: SignInLink = SignInLink(href: "")
-  private var leads: SignInLink = SignInLink(href: "")
+  private var offers: String = ""
+  private var leads: String = ""
 
   private static let instance = UserInfo()
 
   static func initialize(offers: SignInLink, leads: SignInLink) {
-    instance.offers = offers
-    instance.leads = leads
+    instance.offers = offers.href
+    instance.leads = leads.href
   }
 
-  static func offersLink() -> SignInLink {
+  static func offersLink() -> String {
     return instance.offers
   }
 
-  static func leadsLink() -> SignInLink {
+  static func leadsLink() -> String {
     return instance.leads
   }
 }
