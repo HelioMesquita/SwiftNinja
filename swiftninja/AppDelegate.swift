@@ -6,7 +6,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SignInPresenterProtocol {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    SignInPresenter(request: SignInRequest(), presenter: self).present()
+    let interactor = SingleRequestInteractor(request: SignInEndPoint())
+    SignInPresenter(presenter: self, interactor: interactor).present()
     return true
   }
 

@@ -1,8 +1,9 @@
 import Foundation
 
-protocol PresenterProtocol: InteractorProtocol {
+protocol PresenterProtocol {
   associatedtype presenterModel: Decodable
 
+  var interactor: InteractorProtocol? { get set }
   func onSuccess(model: presenterModel)
   func onFail(error: APIError)
   func present()
@@ -10,7 +11,7 @@ protocol PresenterProtocol: InteractorProtocol {
 
 extension PresenterProtocol {
   func present() {
-    fetch(decodingType: presenterModel.self) { (result) in
+    interactor?.fetch(decodingType: presenterModel.self) { (result) in
       switch result {
       case .success(let model):
         self.onSuccess(model: model)

@@ -8,8 +8,9 @@ protocol SignInPresenterProtocol {
 struct SignInPresenter: PresenterProtocol {
 
   typealias presenterModel = SignInModel
-  var request: RequestProtocol
+
   var presenter: SignInPresenterProtocol
+  var interactor: InteractorProtocol?
 
   func onSuccess(model: SignInModel) {
     self.userInfo(model)

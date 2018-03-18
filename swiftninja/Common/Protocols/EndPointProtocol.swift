@@ -1,6 +1,6 @@
 import Alamofire
 
-protocol RequestProtocol {
+protocol EndPointProtocol {
   var baseURL: String { get }
   var requestMethod: RequestMethod { get }
 }

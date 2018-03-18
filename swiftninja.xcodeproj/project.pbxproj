@@ -20,13 +20,14 @@
 		FD5BEEBD204DDED700280E4D /* SignInInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEBC204DDED700280E4D /* SignInInteractorTests.swift */; };
 		FD5BEEC8204DDED700280E4D /* swiftninjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEC7204DDED700280E4D /* swiftninjaUITests.swift */; };
 		FD5BEED7204DE05100280E4D /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEED6204DE05100280E4D /* Bundle.swift */; };
-		FD5BEEDE204DE17500280E4D /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEDD204DE17500280E4D /* RequestProtocol.swift */; };
+		FD5BEEDE204DE17500280E4D /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEDD204DE17500280E4D /* EndPointProtocol.swift */; };
 		FD5BEEE7204DE97B00280E4D /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEE6204DE97B00280E4D /* SignInModel.swift */; };
 		FD5BEEE9204DE98600280E4D /* SignInLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEE8204DE98600280E4D /* SignInLinks.swift */; };
 		FD5BEEEB204DEA2800280E4D /* SignInLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEEA204DEA2800280E4D /* SignInLink.swift */; };
-		FD5BEEEE204DEB2D00280E4D /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEED204DEB2D00280E4D /* SignInRequest.swift */; };
+		FD5BEEEE204DEB2D00280E4D /* SignInEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEED204DEB2D00280E4D /* SignInEndPoint.swift */; };
 		FD5BEEF1204DEC1800280E4D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEF0204DEC1800280E4D /* UserInfo.swift */; };
 		FD5BEEF4204DF17300280E4D /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BEEF3204DF17300280E4D /* SignInPresenter.swift */; };
+		FD8720BC205EA95A0046934A /* SingleRequestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */; };
 		FD968236204F2FFB00BAF529 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD968235204F2FFB00BAF529 /* APIError.swift */; };
 		FD968238204F311800BAF529 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD968237204F311800BAF529 /* Result.swift */; };
 /* End PBXBuildFile section */
@@ -74,13 +75,14 @@
 		FD5BEEC7204DDED700280E4D /* swiftninjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftninjaUITests.swift; sourceTree = "<group>"; };
 		FD5BEEC9204DDED700280E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5BEED6204DE05100280E4D /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
-		FD5BEEDD204DE17500280E4D /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		FD5BEEDD204DE17500280E4D /* EndPointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointProtocol.swift; sourceTree = "<group>"; };
 		FD5BEEE6204DE97B00280E4D /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		FD5BEEE8204DE98600280E4D /* SignInLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLinks.swift; sourceTree = "<group>"; };
 		FD5BEEEA204DEA2800280E4D /* SignInLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLink.swift; sourceTree = "<group>"; };
-		FD5BEEED204DEB2D00280E4D /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		FD5BEEED204DEB2D00280E4D /* SignInEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEndPoint.swift; sourceTree = "<group>"; };
 		FD5BEEF0204DEC1800280E4D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FD5BEEF3204DF17300280E4D /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRequestInteractor.swift; sourceTree = "<group>"; };
 		FD968235204F2FFB00BAF529 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		FD968237204F311800BAF529 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,8 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				FD14BAC420508DEA001DD09D /* PresenterProtocol.swift */,
-				FD5BEEDD204DE17500280E4D /* RequestProtocol.swift */,
+				FD5BEEDD204DE17500280E4D /* EndPointProtocol.swift */,
 				FD45F2A3204E0FDE00783869 /* InteractorProtocol.swift */,
+				FD8720BB205EA95A0046934A /* SingleRequestInteractor.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -265,7 +268,7 @@
 		FD5BEEE4204DE7E600280E4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FD5BEEED204DEB2D00280E4D /* SignInRequest.swift */,
+				FD5BEEED204DEB2D00280E4D /* SignInEndPoint.swift */,
 				FD5BEEE6204DE97B00280E4D /* SignInModel.swift */,
 				FD5BEEE8204DE98600280E4D /* SignInLinks.swift */,
 				FD5BEEEA204DEA2800280E4D /* SignInLink.swift */,
@@ -418,9 +421,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swiftninjaTests/Pods-swiftninjaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -567,17 +575,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD5BEEAA204DDED700280E4D /* OffersViewController.swift in Sources */,
+				FD8720BC205EA95A0046934A /* SingleRequestInteractor.swift in Sources */,
 				FD5BEEEB204DEA2800280E4D /* SignInLink.swift in Sources */,
 				FD5BEEF1204DEC1800280E4D /* UserInfo.swift in Sources */,
 				FD5BEEF4204DF17300280E4D /* SignInPresenter.swift in Sources */,
 				FD968238204F311800BAF529 /* Result.swift in Sources */,
-				FD5BEEDE204DE17500280E4D /* RequestProtocol.swift in Sources */,
+				FD5BEEDE204DE17500280E4D /* EndPointProtocol.swift in Sources */,
 				FD14BAC520508DEA001DD09D /* PresenterProtocol.swift in Sources */,
 				FD5BEED7204DE05100280E4D /* Bundle.swift in Sources */,
 				FD968236204F2FFB00BAF529 /* APIError.swift in Sources */,
 				FD5BEEE7204DE97B00280E4D /* SignInModel.swift in Sources */,
 				FD5BEEE9204DE98600280E4D /* SignInLinks.swift in Sources */,
-				FD5BEEEE204DEB2D00280E4D /* SignInRequest.swift in Sources */,
+				FD5BEEEE204DEB2D00280E4D /* SignInEndPoint.swift in Sources */,
 				FD45F2A4204E0FDE00783869 /* InteractorProtocol.swift in Sources */,
 				FD5BEEA8204DDED700280E4D /* AppDelegate.swift in Sources */,
 			);

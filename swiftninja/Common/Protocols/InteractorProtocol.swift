@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 protocol InteractorProtocol {
-  var request: RequestProtocol { get }
+  var request: EndPointProtocol { get }
   func fetch<T: Decodable>(decodingType: T.Type, completion: @escaping (Result<T>) -> Void)
   func request(onSuccess: @escaping (Data?) -> (), onFail: @escaping (APIError) -> Void)
 }

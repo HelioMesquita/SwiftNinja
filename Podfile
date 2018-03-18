@@ -11,7 +11,8 @@ target 'swiftninja' do
 
   target 'swiftninjaTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
 
   target 'swiftninjaUITests' do
