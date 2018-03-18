@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 protocol InteractorProtocol {
-  var request: EndPointProtocol { get }
+  var endPoint: EndPointProtocol { get }
   func fetch<T: Decodable>(decodingType: T.Type, completion: @escaping (Result<T>) -> Void)
   func request(onSuccess: @escaping (Data?) -> (), onFail: @escaping (APIError) -> Void)
 }
@@ -17,15 +17,32 @@ extension InteractorProtocol {
         } catch {
           completion(Result.failure(.jsonParsingFailure))
         }
+      } else {
+        completion(Result.failure(.jsonConversionFailure))
       }
-      completion(Result.failure(.jsonConversionFailure))
     }, onFail: { error in
       completion(Result.failure(.responseUnsuccessful))
     })
   }
 
   func request(onSuccess: @escaping (Data?) -> (), onFail: @escaping (APIError) -> Void) {
-    Alamofire.request(request.baseURL, method: request.requestMethod.name).responseJSON { response in
+    Alamofire.request(endPoint.baseURL, method: endPoint.requestMethod.name).responseJSON { response in
+
+
+//      WIP
+//      if let statusCode = response.response?.statusCode {
+//        switch statusCode {
+//        case 200...399:
+//          print("sucesso")
+//        case 400...499:
+//          print("falha")
+//        case 500:
+//          print("servidor fora")
+//        default:
+//          print("error desconhecido")
+//        }
+//      }
+
       if response.result.isSuccess {
         onSuccess(response.data)
       } else {
