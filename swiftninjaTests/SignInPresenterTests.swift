@@ -34,7 +34,7 @@ class SignInPresenterTests: QuickSpec {
           let interactor = Interactor(endPoint: endPoint)
           let presenter = SignInPresenter(presenter: dummySignInPresenter(), interactor: interactor)
 
-          self.stub(everything, json(object))
+          self.stub(everything, jsonData(object.data(using: .utf8)!))
 
           presenter.present()
 
