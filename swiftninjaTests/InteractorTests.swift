@@ -73,4 +73,3 @@ class InteractorTests: QuickSpec {
     }
   }
 }
-

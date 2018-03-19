@@ -1,4 +1,5 @@
 import Quick
+import Foundation
 import Nimble
 import Mockingjay
 
@@ -8,7 +9,7 @@ class OffersPresenterTests: QuickSpec {
 
   override func spec() {
 
-    let object: AnyObject = """
+    let object = """
     {
       "offers":[
         {
@@ -42,13 +43,13 @@ class OffersPresenterTests: QuickSpec {
           }
       }
     }
-    """ as AnyObject
+    """
 
     class DummyOffersPresenter: OffersPresenterProtocol {
-      var model: OfferList!
+      var subject: OfferList?
 
       func loadTable(with model: OfferList) {
-        self.model = model
+        self.subject = model
       }
       func showError(error: APIError) {}
     }
@@ -60,13 +61,15 @@ class OffersPresenterTests: QuickSpec {
           let endPoint = EndPoint(baseURL: "www.google.com", requestMethod: RequestMethod(name: .get))
           let interactor = Interactor(endPoint: endPoint)
           let dummyPresenter = DummyOffersPresenter()
-          OffersPresenter(interactor: interactor, presenter: dummyPresenter).present()
-          self.stub(everything, json(object))
-          let subject = dummyPresenter.model
+          let presenter = OffersPresenter(interactor: interactor, presenter: dummyPresenter)
 
-          expect(subject?.offers.count).toEventually(equal(1))
-//          expect(subject?.offers.first?.state.rawValue).toEventually(equal("read"))
-//          expect(subject?.offers.first?.embedded.request.title).toEventually(equal("Buffet Completo"))
+          self.stub(everything, jsonData(object.data(using: .utf8)!))
+
+          presenter.present()
+
+          expect(dummyPresenter.subject?.offers.count).toEventually(equal(1))
+          expect(dummyPresenter.subject?.offers.first?.state.rawValue).toEventually(equal("read"))
+          expect(dummyPresenter.subject?.offers.first?.embedded.request.title).toEventually(equal("Buffet Completo"))
         }
       }
     }

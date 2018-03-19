@@ -251,8 +251,8 @@
 				FD5BEEBE204DDED700280E4D /* Info.plist */,
 				FD5BEEBC204DDED700280E4D /* InteractorTests.swift */,
 				FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */,
-				FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */,
 				FD9D83B7205F214A00096371 /* OffersPresenterTest.swift */,
+				FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */,
 			);
 			path = swiftninjaTests;
 			sourceTree = "<group>";
