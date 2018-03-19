@@ -8,7 +8,7 @@ class OffersPresenterTests: QuickSpec {
 
   override func spec() {
 
-    let object = """
+    let object: AnyObject = """
     {
       "offers":[
         {
@@ -42,10 +42,14 @@ class OffersPresenterTests: QuickSpec {
           }
       }
     }
-    """
+    """ as AnyObject
 
-    struct dummyOffersPresenter: OffersPresenterProtocol {
-      func loadTable(with model: OfferList) {}
+    class DummyOffersPresenter: OffersPresenterProtocol {
+      var model: OfferList!
+
+      func loadTable(with model: OfferList) {
+        self.model = model
+      }
       func showError(error: APIError) {}
     }
 
@@ -55,17 +59,16 @@ class OffersPresenterTests: QuickSpec {
         it("should return a offerList from json") {
           let endPoint = EndPoint(baseURL: "www.google.com", requestMethod: RequestMethod(name: .get))
           let interactor = Interactor(endPoint: endPoint)
-          let presenter = OffersPresenter(interactor: interactor, presenter: dummyOffersPresenter())
-
+          let dummyPresenter = DummyOffersPresenter()
+          OffersPresenter(interactor: interactor, presenter: dummyPresenter).present()
           self.stub(everything, json(object))
+          let subject = dummyPresenter.model
 
-          presenter.present()
-
-          expect(UserInfo.leadsLink()).to(equal("http://testemobile.getninjas.com.br/leads"))
+          expect(subject?.offers.count).toEventually(equal(1))
+//          expect(subject?.offers.first?.state.rawValue).toEventually(equal("read"))
+//          expect(subject?.offers.first?.embedded.request.title).toEventually(equal("Buffet Completo"))
         }
       }
     }
   }
 }
-
-
