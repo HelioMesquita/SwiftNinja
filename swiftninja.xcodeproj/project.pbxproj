@@ -40,6 +40,7 @@
 		FDB845DB205EDA510015436F /* OffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DA205EDA510015436F /* OffersPresenter.swift */; };
 		FDB845DD205EDB470015436F /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB845DC205EDB470015436F /* EndPoint.swift */; };
 		FDC5A16B205EB01100463B8C /* SignInPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */; };
+		FDE00DBB206054920002AEF1 /* UserInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE00DBA206054920002AEF1 /* UserInfoTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		FDB845DA205EDA510015436F /* OffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPresenter.swift; sourceTree = "<group>"; };
 		FDB845DC205EDB470015436F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenterTests.swift; sourceTree = "<group>"; };
+		FDE00DBA206054920002AEF1 /* UserInfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 				FDC5A16A205EB01100463B8C /* SignInPresenterTests.swift */,
 				FD9D83B7205F214A00096371 /* OffersPresenterTest.swift */,
 				FD9D83B1205F1C8000096371 /* APIDateFormatterTest.swift */,
+				FDE00DBA206054920002AEF1 /* UserInfoTest.swift */,
 			);
 			path = swiftninjaTests;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				FD9D83B8205F214A00096371 /* OffersPresenterTest.swift in Sources */,
 				FD5BEEBD204DDED700280E4D /* InteractorTests.swift in Sources */,
 				FD9D83B2205F1C8000096371 /* APIDateFormatterTest.swift in Sources */,
+				FDE00DBB206054920002AEF1 /* UserInfoTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
